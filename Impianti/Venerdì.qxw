@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.1</Version>
@@ -231,7 +231,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="1570" Height="1080"/>
+    <WindowState Visible="False" X="0" Y="0" Width="1570" Height="1080"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -244,7 +244,7 @@
     <Shortcut Page="2" Name="Colori"/>
     <PagesLoop>False</PagesLoop>
     <Button Caption="Posizione Zero" ID="8" Icon="">
-     <WindowState Visible="True" X="10" Y="45" Width="115" Height="120"/>
+     <WindowState Visible="False" X="10" Y="45" Width="115" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -258,7 +258,7 @@
      <Input Universe="0" Channel="152" LowerValue="18" UpperValue="18" MonitorValue="18" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Posizione Left" ID="9" Icon="">
-     <WindowState Visible="True" X="135" Y="45" Width="110" Height="120"/>
+     <WindowState Visible="False" X="135" Y="45" Width="110" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -587,7 +587,7 @@
      </Slider>
     </Frame>
     <XYPad Caption="JBLed" ID="40" InvertedAppearance="0">
-     <WindowState Visible="True" X="10" Y="215" Width="350" Height="365"/>
+     <WindowState Visible="False" X="10" Y="215" Width="350" Height="365"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -608,7 +608,7 @@
      </Tilt>
     </XYPad>
     <XYPad Caption="XService" ID="41" InvertedAppearance="0">
-     <WindowState Visible="True" X="375" Y="215" Width="335" Height="365"/>
+     <WindowState Visible="False" X="375" Y="215" Width="335" Height="365"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -657,7 +657,7 @@
     </Button>
    </Frame>
    <Clock Type="Clock" Caption="" ID="0">
-    <WindowState Visible="True" X="1575" Y="930" Width="335" Height="140"/>
+    <WindowState Visible="False" X="1575" Y="930" Width="335" Height="140"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
