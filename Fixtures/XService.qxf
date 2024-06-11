@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>Maurizio</Author>
+ </Creator>
+ <Manufacturer>Alain-Whites</Manufacturer>
+ <Model>XServices febbraio 2023</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Shutter, Strobe, Reset, Lamp On/Off 1">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="19" Preset="ShutterClose">Shutter closed</Capability>
+  <Capability Min="20" Max="49" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="50" Max="72" Preset="StrobeFastToSlow">Strobe, fast -&gt; slow</Capability>
+  <Capability Min="73" Max="79" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="80" Max="99" Preset="PulseFastToSlow">Opening pulse, fast -&gt; slow</Capability>
+  <Capability Min="100" Max="119" Preset="PulseFastToSlow">Closing pulse, fast -&gt; slow</Capability>
+  <Capability Min="120" Max="127" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="128" Max="147" Preset="StrobeFastToSlow">Random strobe, fast</Capability>
+  <Capability Min="148" Max="167" Preset="StrobeRandom">Random strobe, medium</Capability>
+  <Capability Min="168" Max="187" Preset="StrobeRandom">Random strobe, slow</Capability>
+  <Capability Min="188" Max="190" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="191" Max="193" Preset="StrobeRandom">Random opening pulse, fast</Capability>
+  <Capability Min="194" Max="196" Preset="StrobeRandom">Random opening pulse, slow</Capability>
+  <Capability Min="197" Max="199" Preset="StrobeRandom">Random closing pulse, fast</Capability>
+  <Capability Min="200" Max="202" Preset="StrobeRandom">Random closing pulse, slow</Capability>
+  <Capability Min="203" Max="207" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="208" Max="217" Preset="ResetAll">Reset fixture</Capability>
+  <Capability Min="218" Max="227" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="228" Max="237" Preset="LampOn">Lamp on</Capability>
+  <Capability Min="238" Max="247" Preset="ShutterOpen">Shutter open</Capability>
+  <Capability Min="248" Max="255" Preset="LampOff">Lamp off</Capability>
+ </Channel>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="NonsiSa">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="0">Proprietà 1</Capability>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="White" Preset="IntensityWhite"/>
+ <Mode Name="Standard">
+  <Channel Number="0" ActsOn="0">Pan</Channel>
+  <Channel Number="1" ActsOn="1">Tilt</Channel>
+  <Channel Number="2" ActsOn="2">Shutter, Strobe, Reset, Lamp On/Off 1</Channel>
+  <Channel Number="3" ActsOn="3">Dimmer</Channel>
+  <Channel Number="4" ActsOn="4">NonsiSa</Channel>
+  <Channel Number="5" ActsOn="5">Red</Channel>
+  <Channel Number="6" ActsOn="6">Green</Channel>
+  <Channel Number="7">Blue</Channel>
+  <Channel Number="8">White</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="1" ColourTemperature="1"/>
+  <Dimensions Weight="2" Width="300" Height="300" Depth="300"/>
+  <Lens Name="PC" DegreesMin="3" DegreesMax="4"/>
+  <Focus Type="Head" PanMax="300" TiltMax="300"/>
+  <Technical PowerConsumption="1" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
