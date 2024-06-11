@@ -238,13 +238,13 @@
     <ShowEnableButton>True</ShowEnableButton>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Multipage PagesNum="3" CurrentPage="1"/>
+    <Multipage PagesNum="3" CurrentPage="0"/>
     <Shortcut Page="0" Name="Posizioni"/>
     <Shortcut Page="1" Name="Sequenze"/>
     <Shortcut Page="2" Name="Colori"/>
     <PagesLoop>False</PagesLoop>
     <Button Caption="Posizione Zero" ID="8" Icon="">
-     <WindowState Visible="False" X="10" Y="45" Width="115" Height="120"/>
+     <WindowState Visible="True" X="10" Y="45" Width="115" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -258,7 +258,7 @@
      <Input Universe="0" Channel="152" LowerValue="18" UpperValue="18" MonitorValue="18" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Posizione Left" ID="9" Icon="">
-     <WindowState Visible="False" X="135" Y="45" Width="110" Height="120"/>
+     <WindowState Visible="True" X="135" Y="45" Width="110" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -272,7 +272,7 @@
      <Input Universe="0" Channel="153" LowerValue="18" UpperValue="18" MonitorValue="18" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <CueList Caption="Gioco1" ID="10" Page="1">
-     <WindowState Visible="True" X="5" Y="40" Width="380" Height="210"/>
+     <WindowState Visible="False" X="5" Y="40" Width="380" Height="210"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -288,7 +288,7 @@
      <Stop/>
     </CueList>
     <Button Caption="Cerchio" ID="11" Page="1" Icon="">
-     <WindowState Visible="True" X="5" Y="260" Width="120" Height="120"/>
+     <WindowState Visible="False" X="5" Y="260" Width="120" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -587,7 +587,7 @@
      </Slider>
     </Frame>
     <XYPad Caption="JBLed" ID="40" InvertedAppearance="0">
-     <WindowState Visible="False" X="10" Y="215" Width="350" Height="365"/>
+     <WindowState Visible="True" X="10" Y="215" Width="350" Height="365"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -608,7 +608,7 @@
      </Tilt>
     </XYPad>
     <XYPad Caption="XService" ID="41" InvertedAppearance="0">
-     <WindowState Visible="False" X="375" Y="215" Width="335" Height="365"/>
+     <WindowState Visible="True" X="375" Y="215" Width="335" Height="365"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
