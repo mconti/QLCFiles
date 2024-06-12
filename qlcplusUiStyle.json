@@ -1,0 +1,31 @@
+{
+    "colors": {
+        "activeDropArea": "#9dff52",
+        "bgControl": "#555555",
+        "bgLight": "#6f6f6f",
+        "bgLighter": "#8f8f8f",
+        "bgMedium": "#333333",
+        "bgStrong": "#232323",
+        "bgStronger": "#161616",
+        "borderColorDark": "#111111",
+        "fgLight": "#aaaaaa",
+        "fgMain": "#ffffff",
+        "fgMedium": "#888888",
+        "highlight": "#0978ff",
+        "highlightPressed": "#044089",
+        "hover": "#b6b6b6",
+        "sectionHeader": "#31456b",
+        "sectionHeaderDiv": "#22304a",
+        "selection": "#ffff00",
+        "toolbarEnd": "#111111",
+        "toolbarHoverEnd": "#171717",
+        "toolbarHoverStart": "#444444",
+        "toolbarSelectionMain": "#12b4ff",
+        "toolbarSelectionSub": "#ffff00",
+        "toolbarStartMain": "#222222",
+        "toolbarStartSub": "#333333"
+    },
+    "sizes": {
+        "scalingFactor": 0.78875
+    }
+}
