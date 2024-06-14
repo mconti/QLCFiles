@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.1</Version>
-  <Author>admin</Author>
+  <Author>maurizio</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2"/>
-    <Output Plugin="DMX USB" UID=" (S/N: )" Line="0">
-     <PluginParameters UniverseChannels="115"/>
-    </Output>
-    <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1"/>
+    <Input Plugin="MIDI" UID="None" Line="0" Profile="Akai APC Mini mk2"/>
+    <Output Plugin="DMX USB" UID=" (S/N: )" Line="0"/>
+    <Feedback Plugin="MIDI" UID="None" Line="1"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
@@ -73,6 +71,7 @@
    <Step Number="3" FadeIn="0" Hold="1902" FadeOut="0">13</Step>
    <Step Number="4" FadeIn="0" Hold="1902" FadeOut="0">14</Step>
    <Step Number="5" FadeIn="0" Hold="1902" FadeOut="0">16</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">47</Step>
   </Function>
   <Function ID="3" Type="Collection" Name="CCiano" Path="Colori">
    <Step Number="0">8</Step>
@@ -120,21 +119,21 @@
   </Function>
   <Function ID="6" Type="Scene" Name="Rosso" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,255,6,255,8,255</FixtureVal>
-   <FixtureVal ID="0">2,255,3,255,5,255</FixtureVal>
-   <FixtureVal ID="2">5,255,6,255,7,255,8,255,9,255,10,255,11,53,12,61</FixtureVal>
+   <FixtureVal ID="1">5,255,8,255</FixtureVal>
+   <FixtureVal ID="0">2,255,5,255</FixtureVal>
+   <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,53,12,61</FixtureVal>
   </Function>
   <Function ID="7" Type="Scene" Name="Verde" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,255,6,255,9,255</FixtureVal>
-   <FixtureVal ID="0">2,255,3,255,6,255</FixtureVal>
-   <FixtureVal ID="2">5,255,6,255,7,255,8,255,9,255,10,255,11,53,12,115</FixtureVal>
+   <FixtureVal ID="1">5,255,9,255</FixtureVal>
+   <FixtureVal ID="0">2,255,6,255</FixtureVal>
+   <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,53,12,115</FixtureVal>
   </Function>
   <Function ID="8" Type="Scene" Name="Blu" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,255,6,255,10,255</FixtureVal>
-   <FixtureVal ID="0">2,255,3,255,7,255</FixtureVal>
-   <FixtureVal ID="2">5,255,6,255,7,255,8,255,9,255,10,255,11,54,12,125</FixtureVal>
+   <FixtureVal ID="1">5,255,10,255</FixtureVal>
+   <FixtureVal ID="0">2,255,7,255</FixtureVal>
+   <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,54,12,125</FixtureVal>
   </Function>
   <Function ID="9" Type="Collection" Name="Blue Left">
    <Step Number="0">8</Step>
@@ -146,9 +145,9 @@
   </Function>
   <Function ID="11" Type="Scene" Name="Bianco" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">5,255,6,255,8,255,9,255,10,255</FixtureVal>
-   <FixtureVal ID="0">2,255,3,255,5,255,6,255,7,255,8,255</FixtureVal>
-   <FixtureVal ID="2">5,255,6,255,7,255,8,255,9,255,10,255,11,53,12,0</FixtureVal>
+   <FixtureVal ID="1">5,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="0">2,255,5,255,6,255,7,255,8,255</FixtureVal>
+   <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,53,12,0</FixtureVal>
   </Function>
   <Function ID="12" Type="Collection" Name="CRosso" Path="Colori">
    <Step Number="0">6</Step>
@@ -232,11 +231,11 @@
    <FixtureVal ID="2">0,174,2,40</FixtureVal>
    <FixtureVal ID="0">0,172,1,40</FixtureVal>
   </Function>
-  <Function ID="28" Type="Scene" Name="Alto Destra">
+  <Function ID="28" Type="Scene" Name="Alto Destra" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1">0,90,2,55</FixtureVal>
-   <FixtureVal ID="2">0,150,2,40</FixtureVal>
-   <FixtureVal ID="0">0,190,1,40</FixtureVal>
+   <FixtureVal ID="1">0,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,2,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0</FixtureVal>
   </Function>
   <Function ID="29" Type="Scene" Name="Alto Sinistra" Path="Posizioni">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -270,26 +269,18 @@
   </Function>
   <Function ID="33" Type="Scene" Name="Giochino1" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1"/>
-   <FixtureVal ID="0"/>
    <FixtureVal ID="2">7,255,11,146,12,130</FixtureVal>
   </Function>
   <Function ID="34" Type="Scene" Name="Giochino4" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1"/>
-   <FixtureVal ID="0"/>
    <FixtureVal ID="2">7,255,8,255,9,255,10,255,11,146,12,130</FixtureVal>
   </Function>
   <Function ID="35" Type="Scene" Name="Giochino2" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1"/>
-   <FixtureVal ID="0"/>
    <FixtureVal ID="2">8,255,10,255,11,146,12,130</FixtureVal>
   </Function>
   <Function ID="36" Type="Scene" Name="Giochino5" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="1"/>
-   <FixtureVal ID="0"/>
    <FixtureVal ID="2">7,255,8,255,9,255,10,255,11,229,12,209</FixtureVal>
   </Function>
   <Function ID="37" Type="Scene" Name="Dimmer JBLED">
@@ -303,6 +294,40 @@
   <Function ID="39" Type="Scene" Name="Dimmer XService">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="40" Type="Show" Name="Nuovo Show 40">
+   <TimeDivision Type="Time" BPM="120"/>
+   <Track ID="0" Name="Traccia 1" SceneID="48" isMute="0">
+    <ShowFunction ID="30" StartTime="0" Duration="4000" Color="#556b80"/>
+    <ShowFunction ID="30" StartTime="0" Duration="4000" Color="#556b80"/>
+    <ShowFunction ID="32" StartTime="4920" Duration="4000" Color="#556b80"/>
+    <ShowFunction ID="2" StartTime="9500" Duration="11956" Color="#556b80"/>
+    <ShowFunction ID="2" StartTime="20640" Duration="11956" Color="#556b80"/>
+    <ShowFunction ID="32" StartTime="34020" Duration="4000" Color="#556b80"/>
+   </Track>
+  </Function>
+  <Function ID="42" Type="Show" Name="Nuovo Show 42">
+   <TimeDivision Type="Time" BPM="120"/>
+  </Function>
+  <Function ID="43" Type="Sequence" Name="Nuova Sequenza 43" BoundScene="28">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="6">0:0,190,1,40:1:0,90,2,55:2:0,150,2,40</Step>
+  </Function>
+  <Function ID="47" Type="Scene" Name="Gioco1 Posizione e Colori - 7" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,0</FixtureVal>
+  </Function>
+  <Function ID="48" Type="Scene" Name="Scena per Nuovo Show 40 - Traccia 1" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="49" Type="Sequence" Name="Nuova Sequenza 49" BoundScene="48">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -710,8 +735,8 @@
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
    </Button>
-   <Slider Caption="Slider 17" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="False" X="730" Y="415" Width="60" Height="200"/>
+   <Slider Caption="JBLed" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="975" Y="165" Width="70" Height="445"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -720,14 +745,16 @@
      <Font>Default</Font>
     </Appearance>
     <Input Universe="0" Channel="49"/>
-    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="1">6</Channel>
+    </Level>
     <Playback>
      <Function>37</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Slider 20" ID="20" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="False" X="800" Y="420" Width="60" Height="200"/>
+   <Slider Caption="Beam" ID="20" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="1120" Y="165" Width="65" Height="445"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -736,14 +763,16 @@
      <Font>Default</Font>
     </Appearance>
     <Input Universe="0" Channel="50"/>
-    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="2">5</Channel>
+    </Level>
     <Playback>
      <Function>38</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Slider 21" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="False" X="870" Y="420" Width="60" Height="200"/>
+   <Slider Caption="XServ" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="1050" Y="165" Width="65" Height="445"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -752,12 +781,55 @@
      <Font>Default</Font>
     </Appearance>
     <Input Universe="0" Channel="51"/>
-    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="0">3</Channel>
+    </Level>
     <Playback>
      <Function>39</Function>
     </Playback>
    </Slider>
+   <Button Caption="Nuovo Show 40" ID="22" Icon="">
+    <WindowState Visible="False" X="675" Y="410" Width="60" Height="140"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="40"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Pulsante 23" ID="23" Icon="">
+    <WindowState Visible="False" X="745" Y="410" Width="55" Height="140"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <AudioTriggers BarsNumber="5" Caption="" ID="32">
+    <WindowState Visible="False" X="770" Y="10" Width="300" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <VolumeBar Name="Barra del volume" Type="2" MinThreshold="12" MaxThreshold="25" Divisor="1" Index="1000" FunctionID="11"/>
+    <SpectrumBar Name="#1 (0Hz - 1000Hz)" Type="2" MinThreshold="12" MaxThreshold="25" Divisor="1" Index="0" FunctionID="8"/>
+    <SpectrumBar Name="#2 (1000Hz - 2000Hz)" Type="2" MinThreshold="12" MaxThreshold="25" Divisor="1" Index="1" FunctionID="6"/>
+    <SpectrumBar Name="#3 (2000Hz - 3000Hz)" Type="2" MinThreshold="12" MaxThreshold="25" Divisor="1" Index="2" FunctionID="7"/>
+    <SpectrumBar Name="#4 (3000Hz - 4000Hz)" Type="2" MinThreshold="12" MaxThreshold="25" Divisor="1" Index="3" FunctionID="8"/>
+   </AudioTriggers>
   </Frame>
   <Properties>
    <Size Width="1310" Height="650"/>
