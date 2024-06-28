@@ -823,7 +823,7 @@
      <Function ID="12"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="184" LowerValue="14" UpperValue="10" MonitorValue="14" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+     <Input Universe="0" Channel="131256" LowerValue="14" UpperValue="10" MonitorValue="14" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Verde" ID="50" Icon="">
      <WindowState Visible="True" X="85" Y="40" Width="80" Height="75"/>
@@ -837,7 +837,7 @@
      <Function ID="7"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="185" LowerValue="46" UpperValue="42" MonitorValue="46" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="131257" LowerValue="46" UpperValue="42" MonitorValue="46" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Blu" ID="51" Icon="">
      <WindowState Visible="True" X="170" Y="40" Width="80" Height="75"/>
@@ -851,7 +851,7 @@
      <Function ID="8"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="186" LowerValue="78" UpperValue="74" MonitorValue="78" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="131258" LowerValue="78" UpperValue="74" MonitorValue="78" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Strobo di Ruro" ID="52" Icon="">
      <WindowState Visible="True" X="255" Y="40" Width="380" Height="75"/>
@@ -865,7 +865,7 @@
      <Function ID="20"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="128" LowerValue="218" UpperValue="218" MonitorValue="218" LowerParams="0" UpperParams="11" MonitorParams="0"/>
+     <Input Universe="0" Channel="131200" LowerValue="218" UpperValue="218" MonitorValue="218" LowerParams="0" UpperParams="11" MonitorParams="0"/>
     </Button>
    </Frame>
    <Button Caption="Quadrato Pista" ID="57" Icon="">
