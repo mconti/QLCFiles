@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.13.2 GIT</Version>
@@ -11,9 +11,7 @@
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="1" Profile="Akai APC Mini mk2"/>
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0KT9HX)" Line="0">
-     <PluginParameters UniverseChannels="115"/>
-    </Output>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0KT9HX)" Line="0"/>
     <Feedback Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="1"/>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
@@ -47,8 +45,18 @@
    <ID>2</ID>
    <Name>PicoBeam 60</Name>
    <Universe>0</Universe>
-   <Address>0</Address>
+   <Address>126</Address>
    <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Betopper</Manufacturer>
+   <Model>LB230</Model>
+   <Mode>16 Channel</Mode>
+   <ID>3</ID>
+   <Name>BEAM280</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>16</Channels>
   </Fixture>
   <Function ID="0" Type="Scene" Name="Posizione Zero" Path="Old">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -124,18 +132,21 @@
    <FixtureVal ID="1">5,255,8,255</FixtureVal>
    <FixtureVal ID="0">2,255,5,255</FixtureVal>
    <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,53,12,61</FixtureVal>
+   <FixtureVal ID="3"/>
   </Function>
   <Function ID="7" Type="Scene" Name="Verde" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,255,9,255</FixtureVal>
    <FixtureVal ID="0">2,255,6,255</FixtureVal>
    <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,53,12,115</FixtureVal>
+   <FixtureVal ID="3"/>
   </Function>
   <Function ID="8" Type="Scene" Name="Blu" Path="Colori">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">5,255,10,255</FixtureVal>
    <FixtureVal ID="0">2,255,7,255</FixtureVal>
    <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,54,12,125</FixtureVal>
+   <FixtureVal ID="3"/>
   </Function>
   <Function ID="9" Type="Collection" Name="Blue Left">
    <Step Number="0">8</Step>
@@ -150,6 +161,7 @@
    <FixtureVal ID="1">5,255,8,255,9,255,10,255</FixtureVal>
    <FixtureVal ID="0">2,255,5,255,6,255,7,255,8,255</FixtureVal>
    <FixtureVal ID="2">6,255,7,255,8,255,9,255,10,255,11,53,12,0</FixtureVal>
+   <FixtureVal ID="3"/>
   </Function>
   <Function ID="12" Type="Collection" Name="CRosso" Path="Colori">
    <Step Number="0">6</Step>
@@ -341,7 +353,7 @@
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
-   <ChannelStyle>0</ChannelStyle>
+   <ChannelStyle>1</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="5" Height="3" Depth="5" Units="0"/>
    <FxItem ID="0" XPos="996.271" YPos="995.934"/>
@@ -358,7 +370,7 @@
     <Font>Default</Font>
    </Appearance>
    <Button Caption="Cerchio" ID="0" Icon="">
-    <WindowState Visible="True" X="880" Y="15" Width="115" Height="120"/>
+    <WindowState Visible="False" X="880" Y="15" Width="115" Height="120"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -372,7 +384,7 @@
     <Input Universe="0" Channel="144" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
    </Button>
    <Button Caption="Posizione Left" ID="1" Icon="">
-    <WindowState Visible="True" X="650" Y="15" Width="110" Height="120"/>
+    <WindowState Visible="False" X="650" Y="15" Width="110" Height="120"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -386,7 +398,7 @@
     <Input Universe="0" Channel="152" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
    </Button>
    <Button Caption="Posizione Zero" ID="3" Icon="">
-    <WindowState Visible="True" X="765" Y="15" Width="115" Height="120"/>
+    <WindowState Visible="False" X="765" Y="15" Width="115" Height="120"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -400,7 +412,7 @@
     <Input Universe="0" Channel="153" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
    </Button>
    <Button Caption="Gioco 1 Colori e Posizione" ID="4" Icon="">
-    <WindowState Visible="True" X="765" Y="140" Width="115" Height="75"/>
+    <WindowState Visible="False" X="765" Y="140" Width="115" Height="75"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -414,7 +426,7 @@
     <Input Universe="0" Channel="145" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
    </Button>
    <Button Caption="Gioco 2 Colori" ID="5" Icon="">
-    <WindowState Visible="True" X="650" Y="140" Width="110" Height="75"/>
+    <WindowState Visible="False" X="650" Y="140" Width="110" Height="75"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -428,7 +440,7 @@
     <Input Universe="0" Channel="168" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
    </Button>
    <Slider Caption="JBLed" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="1055" Y="165" Width="70" Height="445"/>
+    <WindowState Visible="False" X="1055" Y="165" Width="70" Height="445"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -438,7 +450,7 @@
     </Appearance>
     <Input Universe="0" Channel="49"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="255">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="1">6</Channel>
     </Level>
     <Playback>
@@ -446,7 +458,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Beam" ID="20" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="1135" Y="165" Width="65" Height="445"/>
+    <WindowState Visible="False" X="1135" Y="165" Width="65" Height="445"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -456,7 +468,7 @@
     </Appearance>
     <Input Universe="0" Channel="50"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="255">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="2">5</Channel>
     </Level>
     <Playback>
@@ -464,7 +476,7 @@
     </Playback>
    </Slider>
    <Slider Caption="XServ" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="1215" Y="165" Width="65" Height="445"/>
+    <WindowState Visible="False" X="1215" Y="165" Width="65" Height="445"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -474,7 +486,7 @@
     </Appearance>
     <Input Universe="0" Channel="51"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="255">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">3</Channel>
     </Level>
     <Playback>
@@ -482,7 +494,7 @@
     </Playback>
    </Slider>
    <Button Caption="Nuovo Show 40" ID="22" Icon="">
-    <WindowState Visible="True" X="10" Y="555" Width="65" Height="80"/>
+    <WindowState Visible="False" X="10" Y="555" Width="65" Height="80"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -495,7 +507,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="Pulsante 23" ID="23" Icon="">
-    <WindowState Visible="True" X="90" Y="545" Width="80" Height="95"/>
+    <WindowState Visible="False" X="90" Y="545" Width="80" Height="95"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -515,7 +527,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="5" Y="260" Width="355" Height="280"/>
+    <WindowState Visible="False" X="5" Y="260" Width="355" Height="280"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -524,7 +536,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Alto Sinistra" ID="13" Icon="">
-     <WindowState Visible="True" X="5" Y="35" Width="110" Height="115"/>
+     <WindowState Visible="False" X="5" Y="35" Width="110" Height="115"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -538,7 +550,7 @@
      <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Alto" ID="10" Icon="">
-     <WindowState Visible="True" X="120" Y="35" Width="110" Height="115"/>
+     <WindowState Visible="False" X="120" Y="35" Width="110" Height="115"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -552,7 +564,7 @@
      <Input Universe="0" Channel="156" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Sinistra" ID="33" Icon="">
-     <WindowState Visible="True" X="5" Y="155" Width="110" Height="115"/>
+     <WindowState Visible="False" X="5" Y="155" Width="110" Height="115"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -566,7 +578,7 @@
      <Input Universe="0" Channel="157" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Zero Concerto" ID="34" Icon="">
-     <WindowState Visible="True" X="120" Y="155" Width="110" Height="115"/>
+     <WindowState Visible="False" X="120" Y="155" Width="110" Height="115"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -580,7 +592,7 @@
      <Input Universe="0" Channel="158" LowerValue="1" UpperValue="26" UpperParams="6"/>
     </Button>
     <Button Caption="Destra" ID="35" Icon="">
-     <WindowState Visible="True" X="235" Y="155" Width="110" Height="115"/>
+     <WindowState Visible="False" X="235" Y="155" Width="110" Height="115"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -594,7 +606,7 @@
      <Input Universe="0" Channel="159" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Alto Destra" ID="36" Icon="">
-     <WindowState Visible="True" X="235" Y="35" Width="110" Height="115"/>
+     <WindowState Visible="False" X="235" Y="35" Width="110" Height="115"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -616,7 +628,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="680" Y="260" Width="365" Height="315"/>
+    <WindowState Visible="False" X="680" Y="260" Width="365" Height="315"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>False</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -625,7 +637,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="1 faro" ID="8" Icon="">
-     <WindowState Visible="True" X="5" Y="40" Width="110" Height="120"/>
+     <WindowState Visible="False" X="5" Y="40" Width="110" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -639,7 +651,7 @@
      <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="2 fari" ID="9" Icon="">
-     <WindowState Visible="True" X="120" Y="40" Width="110" Height="120"/>
+     <WindowState Visible="False" X="120" Y="40" Width="110" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -653,7 +665,7 @@
      <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="4 fari" ID="53" Icon="">
-     <WindowState Visible="True" X="5" Y="165" Width="110" Height="120"/>
+     <WindowState Visible="False" X="5" Y="165" Width="110" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -667,7 +679,7 @@
      <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="fari veloci" ID="54" Icon="">
-     <WindowState Visible="True" X="120" Y="165" Width="110" Height="120"/>
+     <WindowState Visible="False" X="120" Y="165" Width="110" Height="120"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -689,7 +701,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="5" Y="125" Width="640" Height="130"/>
+    <WindowState Visible="False" X="5" Y="125" Width="640" Height="130"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -698,7 +710,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Ciano" ID="11" Icon="">
-     <WindowState Visible="True" X="280" Y="50" Width="80" Height="75"/>
+     <WindowState Visible="False" X="280" Y="50" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -712,7 +724,7 @@
      <Input Universe="0" Channel="179" LowerValue="180" UpperValue="180" MonitorValue="180" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Rosso" ID="37" Icon="">
-     <WindowState Visible="True" X="10" Y="50" Width="80" Height="75"/>
+     <WindowState Visible="False" X="10" Y="50" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -726,7 +738,7 @@
      <Input Universe="0" Channel="176" LowerValue="14" UpperValue="10" MonitorValue="14" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Magenta" ID="38" Icon="">
-     <WindowState Visible="True" X="370" Y="50" Width="80" Height="75"/>
+     <WindowState Visible="False" X="370" Y="50" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -740,7 +752,7 @@
      <Input Universe="0" Channel="180" LowerValue="106" UpperValue="106" MonitorValue="106" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Verde" ID="39" Icon="">
-     <WindowState Visible="True" X="100" Y="50" Width="80" Height="75"/>
+     <WindowState Visible="False" X="100" Y="50" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -754,7 +766,7 @@
      <Input Universe="0" Channel="177" LowerValue="46" UpperValue="42" MonitorValue="46" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
     <Button Caption="Giallo" ID="40" Icon="">
-     <WindowState Visible="True" X="460" Y="50" Width="80" Height="75"/>
+     <WindowState Visible="False" X="460" Y="50" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -768,7 +780,7 @@
      <Input Universe="0" Channel="181" LowerValue="218" UpperValue="218" MonitorValue="218" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Bianco" ID="41" Icon="">
-     <WindowState Visible="True" X="550" Y="50" Width="80" Height="75"/>
+     <WindowState Visible="False" X="550" Y="50" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -782,7 +794,7 @@
      <Input Universe="0" Channel="182" LowerValue="6" UpperValue="6" MonitorValue="6" LowerParams="0" UpperParams="6" MonitorParams="0"/>
     </Button>
     <Button Caption="Blu" ID="42" Icon="">
-     <WindowState Visible="True" X="190" Y="50" Width="80" Height="75"/>
+     <WindowState Visible="False" X="190" Y="50" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -804,7 +816,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="5" Y="5" Width="640" Height="115"/>
+    <WindowState Visible="False" X="5" Y="5" Width="640" Height="115"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -812,7 +824,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Rosso" ID="49" Icon="">
-     <WindowState Visible="True" X="0" Y="40" Width="80" Height="75"/>
+     <WindowState Visible="False" X="0" Y="40" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -823,14 +835,10 @@
      <Function ID="12"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-<<<<<<< HEAD
      <Input Universe="0" Channel="184" LowerValue="14" UpperValue="10" MonitorValue="14" LowerParams="0" UpperParams="6" MonitorParams="0"/>
-=======
-     <Input Universe="0" Channel="131256" LowerValue="14" UpperValue="10" MonitorValue="14" LowerParams="6" UpperParams="6" MonitorParams="6"/>
->>>>>>> 0a8ddc265ad3e3230f359dc048aa44739544a933
     </Button>
     <Button Caption="Verde" ID="50" Icon="">
-     <WindowState Visible="True" X="85" Y="40" Width="80" Height="75"/>
+     <WindowState Visible="False" X="85" Y="40" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -841,14 +849,10 @@
      <Function ID="7"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-<<<<<<< HEAD
      <Input Universe="0" Channel="185" LowerValue="46" UpperValue="42" MonitorValue="46" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-=======
-     <Input Universe="0" Channel="131257" LowerValue="46" UpperValue="42" MonitorValue="46" LowerParams="6" UpperParams="6" MonitorParams="6"/>
->>>>>>> 0a8ddc265ad3e3230f359dc048aa44739544a933
     </Button>
     <Button Caption="Blu" ID="51" Icon="">
-     <WindowState Visible="True" X="170" Y="40" Width="80" Height="75"/>
+     <WindowState Visible="False" X="170" Y="40" Width="80" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -859,14 +863,10 @@
      <Function ID="8"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-<<<<<<< HEAD
      <Input Universe="0" Channel="186" LowerValue="78" UpperValue="74" MonitorValue="78" LowerParams="6" UpperParams="6" MonitorParams="6"/>
-=======
-     <Input Universe="0" Channel="131258" LowerValue="78" UpperValue="74" MonitorValue="78" LowerParams="6" UpperParams="6" MonitorParams="6"/>
->>>>>>> 0a8ddc265ad3e3230f359dc048aa44739544a933
     </Button>
     <Button Caption="Strobo di Ruro" ID="52" Icon="">
-     <WindowState Visible="True" X="255" Y="40" Width="380" Height="75"/>
+     <WindowState Visible="False" X="255" Y="40" Width="380" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -877,15 +877,11 @@
      <Function ID="20"/>
      <Action Override="0" ForceLTP="0">Flash</Action>
      <Intensity Adjust="False">100</Intensity>
-<<<<<<< HEAD
      <Input Universe="0" Channel="128" LowerValue="218" UpperValue="218" MonitorValue="218" LowerParams="0" UpperParams="11" MonitorParams="0"/>
-=======
-     <Input Universe="0" Channel="131200" LowerValue="218" UpperValue="218" MonitorValue="218" LowerParams="0" UpperParams="11" MonitorParams="0"/>
->>>>>>> 0a8ddc265ad3e3230f359dc048aa44739544a933
     </Button>
    </Frame>
    <Button Caption="Quadrato Pista" ID="57" Icon="">
-    <WindowState Visible="True" X="365" Y="260" Width="115" Height="85"/>
+    <WindowState Visible="False" X="365" Y="260" Width="115" Height="85"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -899,7 +895,7 @@
     <Input Universe="0" Channel="146" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
    </Button>
    <Button Caption="Quadrato Divergente" ID="58" Icon="">
-    <WindowState Visible="True" X="485" Y="260" Width="105" Height="85"/>
+    <WindowState Visible="False" X="485" Y="260" Width="105" Height="85"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
