@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="InputOutputManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>maurizio</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Input Plugin="MIDI" UID="APC mini mk2" Line="0" Profile="Akai APC Mini mk2">
+     <PluginParameters MIDISendNoteOff="true" midichannel="16"/>
+    </Input>
+    <Output Plugin="DMX USB" UID=" (S/N: )" Line="0">
+     <PluginParameters UniverseChannels="115"/>
+    </Output>
+    <Feedback Plugin="MIDI" UID="APC mini mk2" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Alain-Whites</Manufacturer>
+   <Model>XServices febbraio 2023</Model>
+   <Mode>Standard</Mode>
+   <ID>0</ID>
+   <Name>XServices febbraio 2023</Name>
+   <Universe>0</Universe>
+   <Address>34</Address>
+   <Channels>9</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>JB-Lighting</Manufacturer>
+   <Model>JBLED A7</Model>
+   <Mode>Standard RGB 8 Bit (S8)</Mode>
+   <ID>1</ID>
+   <Name>JBLED A7</Name>
+   <Universe>0</Universe>
+   <Address>99</Address>
+   <Channels>16</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Fun-Generation</Manufacturer>
+   <Model>PicoBeam 60</Model>
+   <Mode>13 Channel</Mode>
+   <ID>2</ID>
+   <Name>PicoBeam 60</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>13</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>MARQ</Manufacturer>
+   <Model>Gesture Spot 100 </Model>
+   <Mode>11 Channel</Mode>
+   <ID>3</ID>
+   <Name>Gesture Spot 100 </Name>
+   <Universe>0</Universe>
+   <Address>75</Address>
+   <Channels>11</Channels>
+  </Fixture>
+  <Function ID="0" Type="Scene" Name="Posizione Zero" Path="Old">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,85,1,210</FixtureVal>
+   <FixtureVal ID="1">0,128,1,0,2,59,3,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,37,3,0</FixtureVal>
+  </Function>
+  <Function ID="1" Type="Scene" Name="Posizione Left" Path="Old">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,87,1,49</FixtureVal>
+   <FixtureVal ID="1">0,28,1,0,2,61,3,0</FixtureVal>
+   <FixtureVal ID="2">0,88,1,0,2,39,3,0</FixtureVal>
+  </Function>
+  <Function ID="2" Type="Chaser" Name="Gioco1 Posizione e Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="1708"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1902" FadeOut="0">9</Step>
+   <Step Number="1" FadeIn="0" Hold="1902" FadeOut="0">17</Step>
+   <Step Number="2" FadeIn="0" Hold="1902" FadeOut="0">15</Step>
+   <Step Number="3" FadeIn="0" Hold="1902" FadeOut="0">13</Step>
+   <Step Number="4" FadeIn="0" Hold="1902" FadeOut="0">14</Step>
+   <Step Number="5" FadeIn="0" Hold="1902" FadeOut="0">16</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">47</Step>
+  </Function>
+  <Function ID="3" Type="Collection" Name="CCiano" Path="Colori">
+   <Step Number="0">8</Step>
+   <Step Number="1">7</Step>
+  </Function>
+  <Function ID="4" Type="Collection" Name="CGiallo" Path="Colori">
+   <Step Number="0">6</Step>
+   <Step Number="1">7</Step>
+  </Function>
+  <Function ID="5" Type="EFX" Name="Cerchio">
+   <Fixture>
+    <ID>1</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <Fixture>
+    <ID>2</ID>
+    <Head>0</Head>
+    <Mode>0</Mode>
+    <Direction>Forward</Direction>
+    <StartOffset>0</StartOffset>
+   </Fixture>
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="1972"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm>Circle</Algorithm>
+   <Width>40</Width>
+   <Height>30</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>100</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+  <Function ID="6" Type="Scene" Name="Rosso" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,255,8,255</FixtureVal>
+   <FixtureVal ID="0">2,255,5,255</FixtureVal>
+   <FixtureVal ID="2">6,0,7,255,8,255,9,255,10,255,11,0,12,61</FixtureVal>
+  </Function>
+  <Function ID="7" Type="Scene" Name="Verde" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,255,9,255</FixtureVal>
+   <FixtureVal ID="0">2,255,6,255</FixtureVal>
+   <FixtureVal ID="2">6,0,7,255,8,255,9,255,10,255,11,0,12,115</FixtureVal>
+  </Function>
+  <Function ID="8" Type="Scene" Name="Blu" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,255,10,255</FixtureVal>
+   <FixtureVal ID="0">2,255,7,255</FixtureVal>
+   <FixtureVal ID="2">6,0,7,255,8,255,9,255,10,255,11,0,12,125</FixtureVal>
+  </Function>
+  <Function ID="9" Type="Collection" Name="Blue Left">
+   <Step Number="0">8</Step>
+   <Step Number="1">1</Step>
+  </Function>
+  <Function ID="10" Type="Collection" Name="CMagenta" Path="Colori">
+   <Step Number="0">8</Step>
+   <Step Number="1">6</Step>
+  </Function>
+  <Function ID="11" Type="Scene" Name="Bianco" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="0">2,255,5,255,6,255,7,255,8,255</FixtureVal>
+   <FixtureVal ID="2">6,0,7,255,8,255,9,255,10,255,11,0,12,16</FixtureVal>
+  </Function>
+  <Function ID="12" Type="Collection" Name="CRosso" Path="Colori">
+   <Step Number="0">6</Step>
+  </Function>
+  <Function ID="13" Type="Collection" Name="Blue Zero">
+   <Step Number="0">8</Step>
+   <Step Number="1">0</Step>
+  </Function>
+  <Function ID="14" Type="Collection" Name="Verde Left">
+   <Step Number="0">1</Step>
+   <Step Number="1">7</Step>
+  </Function>
+  <Function ID="15" Type="Collection" Name="Rosso Left">
+   <Step Number="0">1</Step>
+   <Step Number="1">6</Step>
+  </Function>
+  <Function ID="16" Type="Collection" Name="Rosso Zero">
+   <Step Number="0">0</Step>
+   <Step Number="1">6</Step>
+  </Function>
+  <Function ID="17" Type="Collection" Name="Verde Zero">
+   <Step Number="0">0</Step>
+   <Step Number="1">7</Step>
+  </Function>
+  <Function ID="18" Type="Collection" Name="CBlu" Path="Colori">
+   <Step Number="0">8</Step>
+  </Function>
+  <Function ID="19" Type="Collection" Name="CVerde" Path="Colori">
+   <Step Number="0">7</Step>
+  </Function>
+  <Function ID="20" Type="Scene" Name="Strobo Bianco">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">5,106,6,255</FixtureVal>
+   <FixtureVal ID="0">2,223,3,255</FixtureVal>
+   <FixtureVal ID="2">5,255,6,244,7,255,8,255,9,255,10,255</FixtureVal>
+  </Function>
+  <Function ID="21" Type="Scene" Name="Zero Concerto" Path="Posizioni">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,130,2,37</FixtureVal>
+   <FixtureVal ID="2">0,174,2,55</FixtureVal>
+   <FixtureVal ID="0">0,172,1,30</FixtureVal>
+  </Function>
+  <Function ID="22" Type="Chaser" Name="Gioco2 Solo Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="100" Hold="0" FadeOut="0">18</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">12</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0">3</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0">4</Step>
+   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0">10</Step>
+  </Function>
+  <Function ID="23" Type="Scene" Name="New Scene" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,0</FixtureVal>
+  </Function>
+  <Function ID="24" Type="Sequence" Name="Nuova Sequenza 24" BoundScene="23">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">1:6,255</Step>
+  </Function>
+  <Function ID="25" Type="Scene" Name="posDestra" Path="Posizioni">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,90,2,37</FixtureVal>
+   <FixtureVal ID="2">0,150,2,55</FixtureVal>
+   <FixtureVal ID="0">0,190,1,30</FixtureVal>
+  </Function>
+  <Function ID="26" Type="Scene" Name="posSinistra" Path="Posizioni">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,170,2,37</FixtureVal>
+   <FixtureVal ID="2">0,205,2,55</FixtureVal>
+   <FixtureVal ID="0">0,140,1,30</FixtureVal>
+  </Function>
+  <Function ID="27" Type="Scene" Name="Alto" Path="Posizioni">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,130,2,55</FixtureVal>
+   <FixtureVal ID="2">0,174,2,40</FixtureVal>
+   <FixtureVal ID="0">0,172,1,40</FixtureVal>
+  </Function>
+  <Function ID="28" Type="Scene" Name="Alto Destra" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,0,2,0</FixtureVal>
+   <FixtureVal ID="2">0,0,2,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Scene" Name="Alto Sinistra" Path="Posizioni">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,170,2,55</FixtureVal>
+   <FixtureVal ID="2">0,205,2,40</FixtureVal>
+   <FixtureVal ID="0">0,140,1,40</FixtureVal>
+  </Function>
+  <Function ID="30" Type="Chaser" Name="Quadrato Pista">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0">26</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0">29</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0">41</Step>
+   <Step Number="3" FadeIn="0" Hold="1000" FadeOut="0">25</Step>
+  </Function>
+  <Function ID="31" Type="Scene" Name="Alto Divergente" Path="Posizioni">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,160,2,55</FixtureVal>
+   <FixtureVal ID="2">0,150,2,40</FixtureVal>
+   <FixtureVal ID="0">0,172,1,40</FixtureVal>
+  </Function>
+  <Function ID="32" Type="Chaser" Name="Quadrato Divergente">
+   <Speed FadeIn="0" FadeOut="0" Duration="2000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">27</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">31</Step>
+  </Function>
+  <Function ID="33" Type="Scene" Name="Giochino1" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,0,7,255,11,146,12,130</FixtureVal>
+  </Function>
+  <Function ID="34" Type="Scene" Name="Giochino4" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,0,7,255,8,255,9,255,10,255,11,146,12,130</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Scene" Name="Giochino2" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,0,8,255,10,255,11,146,12,130</FixtureVal>
+  </Function>
+  <Function ID="36" Type="Scene" Name="Giochino5" Path="Colori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2">6,0,7,255,8,255,9,255,10,255,11,229,12,209</FixtureVal>
+  </Function>
+  <Function ID="37" Type="Scene" Name="Dimmer JBLED">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1"/>
+  </Function>
+  <Function ID="38" Type="Scene" Name="Dimmer PicoBeam">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="2"/>
+  </Function>
+  <Function ID="39" Type="Scene" Name="Dimmer XService">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">2,255,3,0</FixtureVal>
+  </Function>
+  <Function ID="40" Type="Show" Name="Nuovo Show 40">
+   <TimeDivision Type="Time" BPM="120"/>
+   <Track ID="0" Name="Traccia 1" SceneID="48" isMute="0">
+    <ShowFunction ID="30" StartTime="0" Duration="8000" Color="#556b80"/>
+    <ShowFunction ID="30" StartTime="0" Duration="8000" Color="#556b80"/>
+    <ShowFunction ID="32" StartTime="4920" Duration="4000" Color="#556b80"/>
+    <ShowFunction ID="2" StartTime="9500" Duration="11956" Color="#556b80"/>
+    <ShowFunction ID="2" StartTime="20640" Duration="11956" Color="#556b80"/>
+    <ShowFunction ID="32" StartTime="34020" Duration="4000" Color="#556b80"/>
+    <ShowFunction ID="32" StartTime="40260" Duration="4000" Color="#556b80"/>
+    <ShowFunction ID="30" StartTime="48480" Duration="8000" Color="#556b80"/>
+   </Track>
+  </Function>
+  <Function ID="41" Type="Scene" Name="Alto Destra" Path="Posizioni">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">0,90,2,55</FixtureVal>
+   <FixtureVal ID="2">0,150,2,40</FixtureVal>
+   <FixtureVal ID="0">0,190,1,40</FixtureVal>
+  </Function>
+  <Function ID="42" Type="Show" Name="Nuovo Show 42">
+   <TimeDivision Type="Time" BPM="120"/>
+  </Function>
+  <Function ID="43" Type="Sequence" Name="Nuova Sequenza 43" BoundScene="28">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="6">0:0,190,1,40:1:0,90,2,55:2:0,150,2,40</Step>
+  </Function>
+  <Function ID="44" Type="Scene" Name="Verde Fiori">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3">0,35,2,37,5,76,7,87,8,113,9,170</FixtureVal>
+  </Function>
+  <Function ID="45" Type="Scene" Name="Verde Fiori 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,223,3,0,4,0,5,0,6,0,7,0,8,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,106,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0,4,0,5,0,6,244,7,0,8,0,9,0,10,0,11,0,12,0</FixtureVal>
+   <FixtureVal ID="3">0,61,1,0,2,73,3,0,4,0,5,76,6,0,7,87,8,113,9,170,10,0</FixtureVal>
+  </Function>
+  <Function ID="47" Type="Scene" Name="Gioco1 Posizione e Colori - 7" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="1">6,0</FixtureVal>
+  </Function>
+  <Function ID="48" Type="Scene" Name="Scena per Nuovo Show 40 - Traccia 1" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+  </Function>
+  <Function ID="49" Type="Sequence" Name="Nuova Sequenza 49" BoundScene="48">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>1</ChannelStyle>
+   <ValueStyle>0</ValueStyle>
+   <Grid Width="5" Height="3" Depth="5" Units="0"/>
+   <FxItem ID="0" XPos="996.271" YPos="995.934"/>
+   <FxItem ID="1" XPos="-13.8812" YPos="701.085"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>4292861919</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Button Caption="Cerchio" ID="0" Icon="">
+    <WindowState Visible="False" X="880" Y="15" Width="115" Height="120"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="5"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="144" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+   </Button>
+   <Button Caption="Posizione Left" ID="1" Icon="">
+    <WindowState Visible="False" X="650" Y="15" Width="110" Height="120"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="1"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="152" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+   </Button>
+   <Button Caption="Posizione Zero" ID="3" Icon="">
+    <WindowState Visible="False" X="765" Y="15" Width="115" Height="120"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="0"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="153" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+   </Button>
+   <Button Caption="Gioco 1 Colori e Posizione" ID="4" Icon="">
+    <WindowState Visible="False" X="765" Y="140" Width="115" Height="75"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="2"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="145" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+   </Button>
+   <Button Caption="Gioco 2 Colori" ID="5" Icon="">
+    <WindowState Visible="False" X="650" Y="140" Width="110" Height="75"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="22"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="168" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+   </Button>
+   <Slider Caption="JBLed" ID="17" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="1050" Y="165" Width="70" Height="445"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="49"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="1">6</Channel>
+    </Level>
+    <Playback>
+     <Function>37</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Beam" ID="20" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="1135" Y="165" Width="65" Height="445"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="50"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="2">5</Channel>
+    </Level>
+    <Playback>
+     <Function>38</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="XServ" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="1215" Y="165" Width="65" Height="445"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="51"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="0">3</Channel>
+    </Level>
+    <Playback>
+     <Function>39</Function>
+    </Playback>
+   </Slider>
+   <Button Caption="Nuovo Show 40" ID="22" Icon="">
+    <WindowState Visible="False" X="10" Y="555" Width="65" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="40"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Pulsante 23" ID="23" Icon="">
+    <WindowState Visible="False" X="90" Y="545" Width="80" Height="95"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="4294967295"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <SoloFrame Caption="Posizioni di Stefano" ID="32">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="5" Y="260" Width="355" Height="280"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Alto Sinistra" ID="13" Icon="">
+     <WindowState Visible="False" X="5" Y="35" Width="110" Height="115"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="29"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Alto" ID="10" Icon="">
+     <WindowState Visible="False" X="120" Y="35" Width="110" Height="115"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="27"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="156" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Sinistra" ID="33" Icon="">
+     <WindowState Visible="False" X="5" Y="155" Width="110" Height="115"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="26"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="157" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Zero Concerto" ID="34" Icon="">
+     <WindowState Visible="False" X="120" Y="155" Width="110" Height="115"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="21"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="158" LowerValue="1" UpperValue="26" UpperParams="6"/>
+    </Button>
+    <Button Caption="Destra" ID="35" Icon="">
+     <WindowState Visible="False" X="235" Y="155" Width="110" Height="115"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="25"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="159" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Alto Destra" ID="36" Icon="">
+     <WindowState Visible="False" X="235" Y="35" Width="110" Height="115"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="41"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="155" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Giochini BEAM" ID="6">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="365" Y="260" Width="195" Height="250"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="1 faro" ID="8" Icon="">
+     <WindowState Visible="False" X="5" Y="40" Width="90" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="33"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="2 fari" ID="9" Icon="">
+     <WindowState Visible="False" X="100" Y="40" Width="85" Height="95"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="35"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="4 fari" ID="53" Icon="">
+     <WindowState Visible="False" X="5" Y="140" Width="90" Height="100"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="34"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="fari veloci" ID="54" Icon="">
+     <WindowState Visible="False" X="100" Y="140" Width="85" Height="100"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="36"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="154" LowerValue="26" UpperValue="26" MonitorValue="26" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+   </SoloFrame>
+   <SoloFrame Caption="Colori secondari" ID="43">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="5" Y="125" Width="640" Height="130"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Ciano" ID="11" Icon="">
+     <WindowState Visible="False" X="280" Y="50" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="3"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="179" LowerValue="180" UpperValue="180" MonitorValue="180" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Rosso" ID="37" Icon="">
+     <WindowState Visible="False" X="10" Y="50" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="176" LowerValue="14" UpperValue="10" MonitorValue="14" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Magenta" ID="38" Icon="">
+     <WindowState Visible="False" X="370" Y="50" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="10"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="180" LowerValue="106" UpperValue="106" MonitorValue="106" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Verde" ID="39" Icon="">
+     <WindowState Visible="False" X="100" Y="50" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="19"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="177" LowerValue="46" UpperValue="42" MonitorValue="46" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Giallo" ID="40" Icon="">
+     <WindowState Visible="False" X="460" Y="50" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="181" LowerValue="218" UpperValue="218" MonitorValue="218" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Bianco" ID="41" Icon="">
+     <WindowState Visible="False" X="550" Y="50" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="11"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="182" LowerValue="6" UpperValue="6" MonitorValue="6" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Blu" ID="42" Icon="">
+     <WindowState Visible="False" X="190" Y="50" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="18"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="178" LowerValue="78" UpperValue="74" MonitorValue="78" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+   </SoloFrame>
+   <Frame Caption="Colori primari" ID="48">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="5" Y="5" Width="640" Height="115"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Rosso" ID="49" Icon="">
+     <WindowState Visible="False" X="0" Y="40" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="184" LowerValue="14" UpperValue="10" MonitorValue="14" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+    </Button>
+    <Button Caption="Verde" ID="50" Icon="">
+     <WindowState Visible="False" X="85" Y="40" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="7"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="185" LowerValue="46" UpperValue="42" MonitorValue="46" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Blu" ID="51" Icon="">
+     <WindowState Visible="False" X="170" Y="40" Width="80" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="8"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="186" LowerValue="78" UpperValue="74" MonitorValue="78" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+    </Button>
+    <Button Caption="Strobo di Ruro" ID="52" Icon="">
+     <WindowState Visible="False" X="255" Y="40" Width="380" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="20"/>
+     <Action Override="0" ForceLTP="0">Flash</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="128" LowerValue="218" UpperValue="218" MonitorValue="218" LowerParams="0" UpperParams="11" MonitorParams="0"/>
+    </Button>
+   </Frame>
+   <Button Caption="Quadrato Pista" ID="57" Icon="">
+    <WindowState Visible="False" X="1010" Y="25" Width="115" Height="85"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="30"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="146" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+   </Button>
+   <Button Caption="Quadrato Divergente" ID="58" Icon="">
+    <WindowState Visible="False" X="1130" Y="20" Width="105" Height="85"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="32"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="147" LowerValue="96" UpperValue="96" MonitorValue="96" LowerParams="0" UpperParams="6" MonitorParams="0"/>
+   </Button>
+   <SoloFrame Caption="Giochini BEAM 120" ID="2">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="False" X="565" Y="255" Width="225" Height="250"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>False</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="Pulsante 7" ID="7" Icon="">
+     <WindowState Visible="False" X="5" Y="45" Width="65" Height="70"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="4294967295"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
+  </Frame>
+  <Properties>
+   <Size Width="1310" Height="650"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="0" Channel="48"/>
+   </GrandMaster>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>

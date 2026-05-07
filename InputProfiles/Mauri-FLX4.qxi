@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.13.1</Version>
+  <Author>maurizio</Author>
+ </Creator>
+ <Manufacturer>Mauri</Manufacturer>
+ <Model>FLX4</Model>
+ <Type>MIDI</Type>
+ <Channel Number="4">
+  <Name>Trim-1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="7">
+  <Name>HIGH-1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="11">
+  <Name>MID-1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="15">
+  <Name>LOW-1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="19">
+  <Name>VOL-1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="33">
+  <Name>Left Jog</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="139">
+  <Name>Play-1</Name>
+  <Type>Button</Type>
+  <Feedback UpperValue="127"/>
+ </Channel>
+ <Channel Number="140">
+  <Name>CUE-1</Name>
+  <Type>Button</Type>
+  <Feedback UpperValue="127"/>
+ </Channel>
+ <Channel Number="155">
+  <Name>HotCue-1</Name>
+  <Type>Button</Type>
+  <Feedback UpperValue="127"/>
+ </Channel>
+ <Channel Number="158">
+  <Name>PadFX-1</Name>
+  <Type>Button</Type>
+  <Feedback UpperValue="127"/>
+ </Channel>
+ <Channel Number="160">
+  <Name>BeatJump-1</Name>
+  <Type>Button</Type>
+  <Feedback UpperValue="127"/>
+ </Channel>
+ <Channel Number="162">
+  <Name>Sampler-1</Name>
+  <Type>Button</Type>
+  <Feedback UpperValue="127"/>
+ </Channel>
+ <Channel Number="4100">
+  <Name>Slider 4101</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4103">
+  <Name>Slider 4104</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4107">
+  <Name>MID-2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4111">
+  <Name>LOW-2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4115">
+  <Name>VOL-2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4129">
+  <Name>Right Jog</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="4132">
+  <Name>TRIM-2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4135">
+  <Name>HIGH-2</Name>
+  <Type>Slider</Type>
+  <Movement Sensitivity="20">Relative</Movement>
+ </Channel>
+ <Channel Number="4139">
+  <Name>Slider 4140</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4143">
+  <Name>Slider 4144</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4147">
+  <Name>Pulsante 4148</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="24584">
+  <Name>Master Level</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="24599">
+  <Name>CFX-1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="24600">
+  <Name>Slider 24601CFX-2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="24632">
+  <Name>Slider 24633</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="28848">
+  <Name>PAD1-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28849">
+  <Name>PAD2-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28850">
+  <Name>PAD3-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28851">
+  <Name>PAD4-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28852">
+  <Name>PAD5-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28853">
+  <Name>PAD6-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28854">
+  <Name>PAD7-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28855">
+  <Name>PAD8-1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <ColorTable>
+  <Color Value="0" Label="Spento" RGB="#000000"/>
+  <Color Value="127" Label="Acceso" RGB="#ffaa00"/>
+ </ColorTable>
+ <MidiChannelTable>
+  <Channel Value="0" Label=""/>
+  <Channel Value="1" Label="2"/>
+ </MidiChannelTable>
+</InputProfile>
