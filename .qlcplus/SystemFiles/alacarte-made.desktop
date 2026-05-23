@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=QLC+ Kiosk
+Exec=/usr/bin/qlcplus -f -k -p -o /home/maurizio/.qlcplus/Impianti/ImpiantoBaiaPasqua2025.qxw 
+Comment=
+Terminal=false
+Icon=gnome-panel-launcher
+Type=Application
