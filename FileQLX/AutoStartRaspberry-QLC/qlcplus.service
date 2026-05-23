@@ -1,0 +1,16 @@
+# prima versione
+# non va perchè l'utente nel rasp non c'è.
+# l'utente giusto è "maurizio"
+
+[Unit]
+Description=QLC+ auto-start
+After=network.target graphical.target
+
+[Service]
+ExecStart=/usr/bin/qlcplus -o /home/maurizio/.qlcplus/impianti/ImpiantoBaiaPasqua2025.qxw
+User=pi
+Environment=DISPLAY=:0
+Restart=on-failure
+
+[Install]
+WantedBy=graphical.target

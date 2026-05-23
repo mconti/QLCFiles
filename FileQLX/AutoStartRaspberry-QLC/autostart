@@ -1,0 +1,1 @@
+@bash -c "sleep 5 && qlcplus -o /home/maurizio/.qlcplus/Impianti/ImpiantoBaiaPasqua2025.qxw >> /home/maurizio/logqlc.txt 2>&1"

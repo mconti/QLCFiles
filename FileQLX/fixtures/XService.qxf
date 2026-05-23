@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.14.3</Version>
+  <Version>4.13.1</Version>
   <Author>Maurizio</Author>
  </Creator>
  <Manufacturer>Alain-Whites</Manufacturer>
@@ -44,21 +44,6 @@
  <Channel Name="Green" Preset="IntensityGreen"/>
  <Channel Name="Blue" Preset="IntensityBlue"/>
  <Channel Name="White" Preset="IntensityWhite"/>
- <Channel Name="Effect 1">
-  <Group Byte="0">Effect</Group>
- </Channel>
- <Channel Name="Effect 2">
-  <Group Byte="0">Effect</Group>
- </Channel>
- <Channel Name="Effect 3">
-  <Group Byte="0">Effect</Group>
- </Channel>
- <Channel Name="Effect 4">
-  <Group Byte="0">Effect</Group>
- </Channel>
- <Channel Name="Demo">
-  <Group Byte="0">Effect</Group>
- </Channel>
  <Mode Name="Standard">
   <Channel Number="0" ActsOn="0">Pan</Channel>
   <Channel Number="1" ActsOn="1">Tilt</Channel>
@@ -69,11 +54,6 @@
   <Channel Number="6" ActsOn="6">Green</Channel>
   <Channel Number="7">Blue</Channel>
   <Channel Number="8">White</Channel>
-  <Channel Number="9">Effect 1</Channel>
-  <Channel Number="10">Effect 2</Channel>
-  <Channel Number="11">Effect 3</Channel>
-  <Channel Number="12">Effect 4</Channel>
-  <Channel Number="13">Demo</Channel>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="1" ColourTemperature="1"/>

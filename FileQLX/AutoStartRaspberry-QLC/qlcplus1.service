@@ -1,0 +1,21 @@
+# secondaa versione
+# ok utente "maurizio"
+# aspetta che ii servizi della grafica siano partiti prima di lanciare QLC
+
+[Unit]
+Description=Avvia QLC dopo il desktop
+After=network.target graphical.target
+Requires=graphical.target
+
+[Service]
+Type=simple
+User=maurizio
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/maurizio/.Xauthority
+ExecStart=/home/maurizio/scripts/start-qlcplus.sh
+StandardOutput=journal
+StandardError=journal
+Restart=on-failure
+
+[Install]
+WantedBy=graphical.target
