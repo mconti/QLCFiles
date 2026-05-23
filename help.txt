@@ -1,0 +1,10 @@
+Per lanciare un file manager in modalità root
+sudo pcmanfm
+
+una volta aperto, con ctrl-H si vedono i file nascosti.
+
+le fixture sono qui (cartella nascosta)
+/home/maurizio/.qlcplus/fixtures
+
+il file che fa partire QLC+ all'avvio
+/home/maurizio/QLCFiles/script/start-qlcpls.sh
