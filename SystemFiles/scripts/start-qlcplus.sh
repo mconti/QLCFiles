@@ -6,7 +6,7 @@ export XAUTHORITY=/home/maurizio/.Xauthority
 
 USB_DIR="/media/maurizio"
 #TARGET_DIR="/home/maurizio/QLCFiles/Impianti/"
-TARGET_DIR="/home/maurizio/Desktop/QLCFiles/Impianti/"
+TARGET_DIR="/home/maurizio/.qlcplus/Impianti/"
 UPDATE_FOLDER="QLCUpdate"
 FILENAME="Bustreng2026-2.qxw"
 MAX_WAIT=15
