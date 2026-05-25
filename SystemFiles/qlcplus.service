@@ -3,8 +3,8 @@ Description=QLC+ auto-start
 After=network.target graphical.target
 
 [Service]
-ExecStart=/usr/bin/qlcplus -o /home/maurizio/.qlcplus/impianti/ImpiantoBaiaPasqua2025.qxw
-User=pi
+ExecStart=/home/maurizio/.qlcplus/SystemFiles/scripts/start-qlcplus.sh
+User=maurizio
 Environment=DISPLAY=:0
 Restart=on-failure
 
