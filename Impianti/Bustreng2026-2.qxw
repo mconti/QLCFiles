@@ -1946,7 +1946,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="120" Y="0" Width="620" Height="315"/>
+    <WindowState Visible="True" X="115" Y="0" Width="620" Height="315"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2062,7 +2062,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="120" Y="320" Width="620" Height="170"/>
+    <WindowState Visible="True" X="115" Y="320" Width="620" Height="170"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2436,7 +2436,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="120" Y="495" Width="620" Height="110"/>
+    <WindowState Visible="True" X="115" Y="495" Width="620" Height="110"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2540,7 +2540,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="120" Y="725" Width="620" Height="215"/>
+    <WindowState Visible="True" X="115" Y="725" Width="620" Height="215"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2787,7 +2787,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="120" Y="610" Width="620" Height="110"/>
+    <WindowState Visible="True" X="115" Y="610" Width="620" Height="110"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
