@@ -3,22 +3,22 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.14.3</Version>
-  <Author>maurizio</Author>
+  <Version>4.13.2 GIT</Version>
+  <Author></Author>
  </Creator>
  <Engine Autostart="71">
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="None" Line="2" Profile="Akai APC Mini mk2"/>
+    <Input Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="3" Profile="Akai APC Mini mk2"/>
     <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0KT9HX)" Line="0">
      <PluginParameters UniverseChannels="509"/>
     </Output>
-    <Feedback Plugin="MIDI" UID="None" Line="2"/>
+    <Feedback Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="3"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="None" Line="1"/>
-    <Feedback Plugin="MIDI" UID="None" Line="1"/>
+    <Input Plugin="MIDI" UID="LPD8 mk2 MIDI 1" Line="5"/>
+    <Feedback Plugin="MIDI" UID="LPD8 mk2 MIDI 1" Line="5"/>
    </Universe>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -1939,7 +1939,7 @@
    <Step Number="1">78</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
-   <Font>Sans Serif,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1</Font>
+   <Font>Sans Serif,9,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="5" Height="3" Depth="5" Units="0"/>
@@ -2559,6 +2559,7 @@
      <Function ID="79"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="178" LowerValue="2" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
    </SoloFrame>
    <SoloFrame Caption="Posizioni dinamiche WASH" ID="41">
@@ -2864,7 +2865,7 @@
      <Function ID="76"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
-     <Input Universe="0" Channel="137" LowerValue="2" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
+     <Input Universe="0" Channel="138" LowerValue="2" UpperValue="24" MonitorValue="24" LowerParams="6" UpperParams="6" MonitorParams="6"/>
     </Button>
    </SoloFrame>
    <Frame Caption="MASTER" ID="74">
@@ -2907,7 +2908,7 @@
      </Appearance>
      <Input Universe="0" Channel="48"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Submaster</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Level LowLimit="0" HighLimit="255" Value="255"/>
      <Playback>
       <Function>4294967295</Function>
      </Playback>
@@ -3066,7 +3067,7 @@
      </Appearance>
      <Input Universe="0" Channel="51"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="0">
+     <Level LowLimit="0" HighLimit="255" Value="255">
       <Channel Fixture="15">2</Channel>
       <Channel Fixture="16">2</Channel>
      </Level>
@@ -3250,7 +3251,7 @@
   </Frame>
   <Properties>
    <Size Width="1860" Height="940"/>
-   <GrandMaster Visible="1" ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
     <Input Universe="0" Channel="48"/>
    </GrandMaster>
   </Properties>
