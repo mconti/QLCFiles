@@ -10,15 +10,15 @@
   <InputOutputMap>
    <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="3" Profile="Akai APC Mini mk2"/>
+    <Input Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="1" Profile="Akai APC Mini mk2"/>
     <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0KT9HX)" Line="0">
      <PluginParameters UniverseChannels="509"/>
     </Output>
-    <Feedback Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="3"/>
+    <Feedback Plugin="MIDI" UID="APC mini mk2 APC mini mk2 Contr" Line="1"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Input Plugin="MIDI" UID="LPD8 mk2 MIDI 1" Line="5"/>
-    <Feedback Plugin="MIDI" UID="LPD8 mk2 MIDI 1" Line="5"/>
+    <Input Plugin="MIDI" UID="LPD8 mk2 MIDI 1" Line="3"/>
+    <Feedback Plugin="MIDI" UID="LPD8 mk2 MIDI 1" Line="3"/>
    </Universe>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -770,7 +770,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3458"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="5341"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Diamond</Algorithm>
@@ -3086,7 +3086,7 @@
      </Appearance>
      <Input Universe="0" Channel="54"/>
      <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-     <Level LowLimit="0" HighLimit="255" Value="162">
+     <Level LowLimit="0" HighLimit="255" Value="42">
       <Channel Fixture="15">9</Channel>
       <Channel Fixture="16">9</Channel>
      </Level>
@@ -3126,7 +3126,7 @@
      <AbsoluteValue Minimum="6000" Maximum="2000">
       <Input Universe="0" Channel="54"/>
      </AbsoluteValue>
-     <Time>3458</Time>
+     <Time>5341</Time>
      <Function FadeIn="0" FadeOut="0" Duration="6">26</Function>
     </SpeedDial>
     <Button Caption="Dimmering BARRA" ID="81" Icon="">
@@ -3248,6 +3248,18 @@
      <Input Universe="0" Channel="234" LowerValue="1" UpperValue="3"/>
     </Button>
    </SoloFrame>
+   <AudioTriggers BarsNumber="6" Caption="MIC" ID="85">
+    <WindowState Visible="True" X="1085" Y="70" Width="200" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Key>1</Key>
+    <VolumeBar Name="Volume Bar" Type="3" MinThreshold="51" MaxThreshold="102" Divisor="1" Index="1000" WidgetID="50"/>
+   </AudioTriggers>
   </Frame>
   <Properties>
    <Size Width="1860" Height="940"/>
